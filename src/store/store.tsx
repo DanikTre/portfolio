@@ -8,6 +8,8 @@ import { ContactImg } from "../component/common/image/ContactImg";
 import { HomeImg } from "../component/common/image/HomeImg";
 import { PortfolioImg } from "../component/common/image/PortfolioImg";
 import ResumeImg from "../component/common/image/ResumeImg";
+import NewspaperImg from "../component/common/image/NewspaperImg.jpg";
+import NewspaperImgg from "../component/common/image/NewspaperImgg.jpeg";
 import { SkillsImg } from "../component/common/image/SkillsImg";
 
 export type SkillType = {
@@ -21,6 +23,7 @@ export type ProjectType = {
   text: string;
   href: string;
   img: string;
+  hoveredImg: string;
 };
 export type ExperienceType = {
   project: string;
@@ -45,54 +48,59 @@ export type MenuType = {
 
 export const store: StoreType = {
   skills: [
-    { id: v1(), title: "HTML / CSS", completed: 89 },
-    { id: v1(), title: "JavaScript / TypeScript", completed: 73 },
-    { id: v1(), title: "React / Redux / Redux Toolkit", completed: 79 },
-    { id: v1(), title: "Styled Components", completed: 85 },
-    { id: v1(), title: "Rest API / UNIT Test", completed: 69 },
+    { id: v1(), title: "HTML / CSS", completed: 90 },
+    { id: v1(), title: "JavaScript / TypeScript", completed: 70 },
+    { id: v1(), title: "React / Redux / Redux Toolkit", completed: 76 },
+    { id: v1(), title: "Styled Components", completed: 86 },
+    { id: v1(), title: "Rest API", completed: 68 },
   ],
   project: [
     {
       id: v1(),
       title: "Social Network",
-      text: "Todolist - react applications for keeping a list of completed tasks",
+      text: "",
       href: "https://artem-hvedinich.github.io/way_of_samuraya",
       img: "https://resources.workable.com/wp-content/uploads/2018/09/5-of-the-best-ways-to-advertise-job-openings-on-social-media-blog.png",
+      hoveredImg: "",
     },
     {
       id: v1(),
       title: "Todolist",
-      text: "hsndfsfiughfdsifkhndskjf",
+      text: "",
       href: "https://artem-hvedinich.github.io/Todolist",
       img: "https://c.neh.tw/thumb/f/720/5307142290538496.jpg",
+      hoveredImg: "",
+    },
+    {
+      id: v1(),
+      title: "Newspaper",
+      text: "",
+      href: "https://artem-hvedinich.github.io/Todolist",
+      img: NewspaperImgg,
+      hoveredImg: NewspaperImg,
     },
   ],
   experience: [
     {
       id: v1(),
-      project: "Cards app",
-      data: "Apr 2022 - in progress",
+      project: "Newspaper",
+      data: "March 2022 - June 2022",
       position: "Front-End Developer",
-      info: `Used technologies: React/Redux-Toolkit/TypeScript/React-router-dom v6/Axios /Material UI
-            /Formik/SCSS/Git, Github. Creating learning app in team with using git, work withaxios(CRUD).`,
-    },
-    {
-      id: v1(),
-      project: "Todolist",
-      data: "Jan 2022 - Apr 2022",
-      position: "Front-End Developer",
-      info: `Used technologies: React/Redux/Redux-Toolkit/React-router-dom v6/ Jest(Unit-Tests) 
-            /Storybook/Axios /Formik/Material UI; Todolist app created with react hooks, routing and redirects, 
-            material UI, REST api request/response flow, unit-tests and etc. `,
+      info: `Used technologies: React, React-Redux, React-router-dom v6, styled-components, @reduxjs/toolkit...`,
     },
     {
       id: v1(),
       project: "Social Network",
-      data: "Nov 2021 - in progress",
+      data: "Dec 2021 - in progress",
       position: "Front-End Developer",
-      info: `sed technologies: React/Redux/TypeScript/Redux-thunk/React-router-dom v6/React-hook-form/Axios/Jest;
-            Social network app with using react hooks, routing, lazy loading, working with REST api, login/logout flow, 
-            pagination, form and validation/file uploading using unit-tests for code workability check.`,
+      info: `Used technologies: React, Redux, TypeScript, Redux-thunk, React-router-dom v6, React-hook-form, Axios...`,
+    },
+    {
+      id: v1(),
+      project: "Todolist",
+      data: "May 2022 - June 2022",
+      position: "Front-End Developer",
+      info: `Used technologies: React, Redux, Redux-Toolkit, React-router-dom v6, Axios...`,
     },
   ],
   menu: [
