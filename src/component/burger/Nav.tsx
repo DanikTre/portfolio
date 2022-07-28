@@ -6,7 +6,6 @@ import { Text } from "../common/Wrappers";
 import { InstaImg } from "../common/image/InstaImg";
 import { TelegramImg } from "../common/image/TelegramImg";
 import { LinkedinImg } from "../common/image/LinkedinImg";
-import { Link, NavLink } from "react-router-dom";
 
 const NavWrapper = styled.div<{ active: boolean }>`
   width: 25%;
@@ -81,7 +80,7 @@ export const Nav = ({
         setActive(false);
       }
     },
-    [active]
+    [active, setActive]
   );
 
   useEffect(() => {

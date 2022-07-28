@@ -45,8 +45,8 @@ export const Image = styled.div<{
   height: 100%;
   z-index: -2;
   background-color: black;
-  background-image: ${(props) =>
-    props.hovered ? "url(" + props.hoveredImg + ")" : "url(" + props.img + ")"};
+  background-image: ${({ hovered, hoveredImg, img }) =>
+    `url(${hovered ? hoveredImg : img})`};
 `;
 
 const TitleWrapper = styled.div`
