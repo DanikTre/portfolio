@@ -84,7 +84,6 @@ export const Contact = () => {
   return (
     <Wrapper id={"Contact"}>
       <RightBlockTitle title={"CONTACT"} width={32} />
-      <MainText>Fill out my form below and send me an email.</MainText>
       <form>
         <Input placeholder={"*Name"} />
         <Input placeholder={"*E-mail"} />
