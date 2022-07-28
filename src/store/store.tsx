@@ -5,7 +5,7 @@ import { HomeImg } from "../component/common/image/HomeImg";
 import { PortfolioImg } from "../component/common/image/PortfolioImg";
 import ResumeImg from "../component/common/image/ResumeImg";
 import NewspaperImg from "../component/common/image/NewspaperImg.jpg";
-import NewspaperImgg from "../component/common/image/NewspaperImgg.jpeg";
+// import NewspaperImgg from "../component/common/image/NewspaperImgg.jpeg";
 import ToDoListImg from "../component/common/image/ToDoListImg.jpg";
 import SocialNetworkImg from "../component/common/image/SocialNetworkImg.jpg";
 import { SkillsImg } from "../component/common/image/SkillsImg";

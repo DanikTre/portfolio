@@ -100,13 +100,13 @@ export const Nav = ({
           <TextSocial>Social</TextSocial>
           <TextDanikTre>@daniktre</TextDanikTre>
           <IconWrapper>
-            <a href={"https://www.linkedin.com/in/daniktre"}>
+            <a href={"https://www.linkedin.com/in/daniktre"} target="_blank">
               <LinkedinImg />
             </a>
-            <a href={"https://t.me/daniktre"}>
+            <a href={"https://t.me/daniktre"} target="_blank">
               <TelegramImg />
             </a>
-            <a href={"https://www.instagram.com/daniktre"}>
+            <a href={"https://www.instagram.com/daniktre"} target="_blank">
               <InstaImg />
             </a>
           </IconWrapper>
