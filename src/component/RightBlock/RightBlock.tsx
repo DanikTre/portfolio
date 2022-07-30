@@ -1,12 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { Skills, SkillsMemo } from "./skills/Skills";
-import { Project, ProjectMemo } from "./project/Project";
-import { Styles, StylesMemo } from "../common/Styles";
-import { About, AboutMemo } from "./About";
-import { Resume, ResumeMemo } from "./Resume";
-import { Home, HomeMemo } from "./Home";
-import { Contact, ContactMemo } from "./Contact";
+import { SkillsMemo } from "./skills/Skills";
+import { ProjectMemo } from "./project/Project";
+import { AboutMemo } from "./About";
+import { ResumeMemo } from "./Resume";
+import { HomeMemo } from "./Home";
+import { ContactMemo } from "./Contact";
 
 const RightBlockWrapper = styled.div`
   position: fixed;
@@ -39,15 +38,6 @@ const SectionContainer = styled.div`
   position: relative;
 `;
 
-const StylesWrapper = styled.div`
-  z-index: -5;
-  position: fixed;
-  height: 20vh;
-  width: 20vw;
-  right: 1vw;
-  top: 10vh;
-`;
-
 export const RightBlock = () => {
   return (
     <RightBlockWrapper>
@@ -59,7 +49,7 @@ export const RightBlock = () => {
             <ResumeMemo />
             <SkillsMemo />
             <ProjectMemo />
-            <ContactMemo />
+            {/* <ContactMemo /> */}
           </SectionContainer>
         </InnerContent>
       </Scroll>

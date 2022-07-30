@@ -1,5 +1,5 @@
 import React from "react";
-import { MainText, Text, Title, Wrapper } from "../common/Wrappers";
+import { MainText, Title, Wrapper } from "../common/styles";
 import { RightBlockTitle } from "../common/RightBlockTitle";
 import styled from "styled-components";
 import { store } from "../../store/store";
@@ -43,7 +43,7 @@ export const Resume = () => {
   return (
     <Wrapper id={"Resume"}>
       <RightBlockTitle title={"RESUME"} width={32} />
-      <MainText>These are the projects in which I participated</MainText>
+      <MainText>These are the demo projects that I've created</MainText>
 
       {experience.map((m) => {
         return (
@@ -51,12 +51,6 @@ export const Resume = () => {
             <LineExperience />
             <LineResume />
             <Title fontSz={1.1}>{m.project}</Title>
-            <Text width={30} mrgLeft={0} mrgIn={0.5} fontSz={1.4}>
-              {m.data}
-            </Text>
-            <Text width={30} mrgLeft={0} mrgIn={2} fontSz={1.2}>
-              {m.position}
-            </Text>
             <MainText fontSz={"1.4vw"}>{m.info}</MainText>
           </ExperienceWrapper>
         );

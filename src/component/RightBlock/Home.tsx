@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Text, Wrapper } from "../common/Wrappers";
+import { Text, Wrapper } from "../common/styles";
 
 const TextWrap = styled.div`
   /* background-color: rgba(253, 178, 131, 0.1); */

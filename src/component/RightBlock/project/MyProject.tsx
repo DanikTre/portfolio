@@ -7,7 +7,7 @@ import {
   IconButtonWrapper,
   LineSeparator,
   Text,
-} from "../../common/Wrappers";
+} from "../../common/styles";
 
 const PortfolioWrapper = styled.div`
   opacity: 1;
@@ -59,17 +59,17 @@ const TitleWrapper = styled.div`
 export const MyProject = () => {
   const project = store.project;
 
-  const [hovered, setHovered] = useState(false);
+  const [hovered, setHovered] = useState(-1);
 
   return (
     <PortfolioWrapper>
-      {project.map((m) => (
+      {project.map((m, index) => (
         <ImageWrapper
           key={m.id}
-          onMouseEnter={() => setHovered(true)}
-          onMouseLeave={() => setHovered(false)}
+          onMouseEnter={() => setHovered(index)}
+          onMouseLeave={() => setHovered(-1)}
         >
-          <a href={m.href}>
+          <a href={m.href} target="_blank" rel="noreferrer noopener">
             <IconButtonWrapper>
               <IconButton>
                 <Arrow />
@@ -82,7 +82,11 @@ export const MyProject = () => {
             </Text>
             <LineSeparator width={2.5} colorOpacity={1} />
           </TitleWrapper>
-          <Image hovered={hovered} img={m.img} hoveredImg={m.hoveredImg} />
+          <Image
+            hovered={index === hovered}
+            img={m.img}
+            hoveredImg={m.hoveredImg}
+          />
         </ImageWrapper>
       ))}
     </PortfolioWrapper>

@@ -1,7 +1,7 @@
 import React from "react";
 import { MyProject } from "./MyProject";
 import { RightBlockTitle } from "../../common/RightBlockTitle";
-import { Wrapper } from "../../common/Wrappers";
+import { Wrapper } from "../../common/styles";
 
 export const Project = () => {
   return (

@@ -30,18 +30,18 @@ type propsMenuType = {
   setActive: (active: boolean) => void;
 };
 
-export const Menu = (props: propsMenuType) => {
+export const Menu = ({ menu, active, setActive }: propsMenuType) => {
   return (
     <>
-      {props.menu.map((m) => {
+      {menu.map((item) => {
         return (
           <MainBlock
-            key={m.id}
-            onClick={() => props.setActive(!props.active)}
-            href={`#${m.title}`}
+            key={item.id}
+            onClick={() => setActive(!active)}
+            href={`#${item.title}`}
           >
-            <Img>{m.img}</Img>
-            {m.title}
+            <Img>{item.img}</Img>
+            {item.title}
           </MainBlock>
         );
       })}

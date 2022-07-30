@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import MyPhoto from "../common/image/avatar.jpg";
-import { LineMemo, LineSeparator } from "../common/Wrappers";
+import { LineMemo, LineSeparator } from "../common/styles";
 import React from "react";
 
 export const AvatarWrapper = styled.div`

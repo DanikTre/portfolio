@@ -1,5 +1,5 @@
 import React from "react";
-import {SvgWrapper} from "../Wrappers";
+import { SvgWrapper } from "../styles";
 
 export const InstaImg = ({ className }: { className?: string }) => {
   return (

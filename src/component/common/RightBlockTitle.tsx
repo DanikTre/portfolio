@@ -1,5 +1,5 @@
 import React from "react";
-import { Title } from "./Wrappers";
+import { Title } from "./styles";
 
 type PropsType = {
   title: string;

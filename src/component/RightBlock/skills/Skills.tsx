@@ -1,6 +1,6 @@
 import React from "react";
 import { Skill } from "./Skill";
-import { Wrapper } from "../../common/Wrappers";
+import { Wrapper } from "../../common/styles";
 import { RightBlockTitle } from "../../common/RightBlockTitle";
 
 export const Skills = () => {

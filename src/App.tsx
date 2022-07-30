@@ -2,7 +2,7 @@ import { useState } from "react";
 import styled from "styled-components";
 import { RightBlock } from "./component/RightBlock/RightBlock";
 import { LeftBlock } from "./component/LeftBlock/LeftBlock";
-import { gradient } from "./component/common/Wrappers";
+import { gradient } from "./component/common/styles";
 import { Nav } from "./component/burger/Nav";
 import { Burger } from "./component/burger/Burger";
 import BackGroundVid from "./component/common/image/PexelsVideos4482.mp4";

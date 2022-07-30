@@ -84,21 +84,21 @@ export const store: StoreType = {
       project: "Newspaper",
       data: "March 2022 - June 2022",
       position: "Front-End Developer",
-      info: `Used technologies: React, React-Redux, React-router-dom v6, styled-components, @reduxjs/toolkit...`,
+      info: `Used technologies: React, React-Redux, React-router-dom v6, styled-components, @reduxjs/toolkit`,
     },
     {
       id: v1(),
       project: "Social Network",
       data: "Dec 2021 - in progress",
       position: "Front-End Developer",
-      info: `Used technologies: React, Redux, TypeScript, Redux-thunk, React-router-dom v6, React-hook-form, Axios...`,
+      info: `Used technologies: React, Redux, TypeScript, Redux-thunk, React-router-dom v6, React-hook-form, Axios`,
     },
     {
       id: v1(),
       project: "Todolist",
       data: "May 2022 - June 2022",
       position: "Front-End Developer",
-      info: `Used technologies: React, Redux, Redux-Toolkit, React-router-dom v6, Axios...`,
+      info: `Used technologies: React, Redux, Redux-Toolkit, React-router-dom v6, Axios`,
     },
   ],
   menu: [
@@ -107,6 +107,5 @@ export const store: StoreType = {
     { id: v1(), title: "Resume", img: <ResumeImg /> },
     { id: v1(), title: "Skills", img: <SkillsImg /> },
     { id: v1(), title: "Portfolio", img: <PortfolioImg /> },
-    { id: v1(), title: "Contact", img: <ContactImg /> },
   ],
 };

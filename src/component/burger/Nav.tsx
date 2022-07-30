@@ -2,7 +2,7 @@ import React, { useRef, useCallback, useEffect } from "react";
 import { Menu } from "./Menu";
 import styled from "styled-components";
 import { store } from "../../store/store";
-import { Text } from "../common/Wrappers";
+import { Text } from "../common/styles";
 import { InstaImg } from "../common/image/InstaImg";
 import { TelegramImg } from "../common/image/TelegramImg";
 import { LinkedinImg } from "../common/image/LinkedinImg";
@@ -100,13 +100,25 @@ export const Nav = ({
           <TextSocial>Social</TextSocial>
           <TextDanikTre>@daniktre</TextDanikTre>
           <IconWrapper>
-            <a href={"https://www.linkedin.com/in/daniktre"} target="_blank">
+            <a
+              href={"https://www.linkedin.com/in/daniktre"}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <LinkedinImg />
             </a>
-            <a href={"https://t.me/daniktre"} target="_blank">
+            <a
+              href={"https://t.me/daniktre"}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <TelegramImg />
             </a>
-            <a href={"https://www.instagram.com/daniktre"} target="_blank">
+            <a
+              href={"https://www.instagram.com/daniktre"}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <InstaImg />
             </a>
           </IconWrapper>
