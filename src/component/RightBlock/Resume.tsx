@@ -29,13 +29,13 @@ const LineExperience = styled.div`
 `;
 
 const LineResume = styled.div`
-  width: 32vw;
+  width: 15vw;
   border-width: 0;
   border-color: white;
   border-style: solid;
   border-bottom-width: 1px;
   opacity: 0.3;
-  transform: translate(-26vw, 13vw) rotate(90deg);
+  transform: translate(-17.5vw, 5.5vw) rotate(90deg);
 `;
 
 export const Resume = () => {
