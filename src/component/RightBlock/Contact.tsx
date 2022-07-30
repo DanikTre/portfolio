@@ -1,5 +1,5 @@
 import React from "react";
-import { MainText, Text, Wrapper } from "../common/Wrappers";
+import { Text, Wrapper } from "../common/Wrappers";
 import { RightBlockTitle } from "../common/RightBlockTitle";
 import styled from "styled-components";
 

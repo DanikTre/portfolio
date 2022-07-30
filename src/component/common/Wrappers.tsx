@@ -23,7 +23,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   min-height: 42vh;
   justify-content: center;
-  margin-bottom: 32vw;
+  margin-bottom: 33vw;
 `;
 
 export const Text = styled.p<{
