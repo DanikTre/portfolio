@@ -1,6 +1,5 @@
 import { v1 } from "uuid";
 import { AboutImg } from "../component/common/image/AboutImg";
-import { ContactImg } from "../component/common/image/ContactImg";
 import { HomeImg } from "../component/common/image/HomeImg";
 import { PortfolioImg } from "../component/common/image/PortfolioImg";
 import ResumeImg from "../component/common/image/ResumeImg";

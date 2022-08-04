@@ -5,7 +5,6 @@ import { ProjectMemo } from "./project/Project";
 import { AboutMemo } from "./About";
 import { ResumeMemo } from "./Resume";
 import { HomeMemo } from "./Home";
-import { ContactMemo } from "./Contact";
 
 const RightBlockWrapper = styled.div`
   position: fixed;
